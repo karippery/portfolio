@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { translations } from '../translation/translations';
+import { Link } from 'react-router-dom';
 
 const CookieConsent = () => {
   const { language } = useLanguage();
@@ -40,9 +41,11 @@ const CookieConsent = () => {
         >
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-sm text-gray-700">
-              <p>
+            <p>
                 {t.privacyShortTitle}
-                <a href="/privacy" className="text-blue-600 hover:underline ml-1">{t.privacyLink}</a>
+                <Link to="/privacy" className="text-blue-600 hover:underline ml-1">
+                  {t.privacyLink}
+                </Link>
               </p>
             </div>
             <div className="flex gap-2">
