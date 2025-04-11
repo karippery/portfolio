@@ -7,13 +7,13 @@ const Home = () => {
   const { language } = useLanguage();
   const t = translations[language];
   return (
-    <div className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8"> 
       <section className="mb-12">
         <div className="flex flex-col md:flex-row items-center">
           <img 
             src={Profileimage}
             alt="John Raphy Karippery" 
-            className="rounded-full w-40 h-40 object-cover mb-4 md:mb-0 md:mr-8"
+            className="rounded-full w-40 h-40 object-cover mb-5 md:mb-0 md:mr-9 hover:scale-150 transition-transform duration-300"
           />
           <div className="space-y-6">
             {/* Name/Title Section */}
@@ -21,7 +21,6 @@ const Home = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
                 {t.welcome}
               </h1>
-              <div className="w-20 h-1 bg-blue-600"></div>
             </div>
 
             {/* Professional Identity */}
@@ -30,41 +29,39 @@ const Home = () => {
                 {t.description}
               </h2>
               
-              <p className="text-lg text-gray-700 leading-relaxed max-w-3xl">
-                For the past <span className="font-semibold text-blue-600">6 years</span>, I've been crafting
-                <span className="text-purple-600"> backend architectures</span> and
-                <span className="text-green-600"> web applications</span> that solve real problems.
-                When I'm not coding, you'll find me exploring new technologies or
-                <span className="text-yellow-600"> contributing to open-source</span> projects.
-                I thrive in collaborative environments and love sharing knowledge with others.
-                My goal is to create impactful software that enhances user experiences and drives innovation.
+              <p className="text-lg text-gray-700 leading-relaxed max-w-5xl">
+                {t.shortProfile}
                 <br />
               </p>
             </div>
 
             {/* Personal Details */}
             <div className="flex flex-wrap gap-4 pt-2">
-              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full">
-                <span className="text-gray-700">📍 Based in Braunschweig</span>
+                <a 
+                  href="https://www.google.com/maps?q=Braunschweig,+Germany" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+                >
+                  <span className="text-gray-700">📍 {t.location}</span>
+                </a>
+              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300">
+                <span className="text-gray-700">📸 {t.hobbies.photography}</span>
               </div>
-              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full">
-                <span className="text-gray-700">📸 Photography enthusiast</span>
+              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300">
+                <span className="text-gray-700">🌍 {t.hobbies.travel}</span>
               </div>
-              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full">
-                <span className="text-gray-700">🌍 Travel lover</span>
-              </div>
-              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full">
-                <span className="text-gray-700">🎮 Casual gamer</span>
+              <div className="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300">
+                <span className="text-gray-700">🎮 {t.hobbies.gaming}</span>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section>
-        <h2 className="text-2xl font-bold mb-4"><Skills /></h2>
+      <section id="skills" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+        <Skills />
       </section>
-    </div>
+    </main>
   );
 };
 

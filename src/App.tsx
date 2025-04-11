@@ -1,16 +1,19 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
-import AboutMe from './components/AboutMe';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { LanguageProvider } from './context/LanguageContext';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
+import CookieConsent from './components/CookieConsent';
+import Privacy from './pages/Privacy';
+import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
     <Router>
+      
       <AnimatePresence mode="wait">
         <motion.div
           initial={{ opacity: 0 }}
@@ -21,12 +24,14 @@ function App() {
         >
       <div className="min-h-screen flex flex-col">
       <LanguageProvider>
+      <CookieConsent />
         <Header />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/aboutme" element={<AboutMe  />} />
+            <Route path="/privacy" element={<Privacy />} />
           </Routes>
         </main>
         <Footer />

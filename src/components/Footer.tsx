@@ -17,7 +17,7 @@ const Footer = () => {
               <img src={GithubIcon} alt="GitHub" className="h-6 w-6" />
             </a>
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://www.linkedin.com/in/john-raphy-karippery-975baa5b/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="transition-transform duration-200 hover:scale-110"
@@ -25,7 +25,7 @@ const Footer = () => {
               <img src={LinkedInIcon} alt="LinkedIn" className="h-6 w-6" />
             </a>
             <a 
-              href="https://Instagram.com/in/yourprofile" 
+              href="https://Instagram.com/john.karippery" 
               target="_blank" 
               rel="noopener noreferrer"
               className="transition-transform duration-200 hover:scale-110"
@@ -33,7 +33,7 @@ const Footer = () => {
               <img src={InstagramIcon} alt="Instagram" className="h-6 w-6" />
             </a>
             <a 
-              href="https://Facebook.com/in/yourprofile" 
+              href="https://www.facebook.com/john.karippery/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="transition-transform duration-200 hover:scale-110"

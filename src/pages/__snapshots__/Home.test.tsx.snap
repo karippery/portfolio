@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component German Content matches snapshot for English 1`] = `
+<DocumentFragment>
+  <main
+    class="container mx-auto px-4 py-8"
+  >
+    <section
+      class="mb-12"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center"
+      >
+        <img
+          alt="John Raphy Karippery"
+          class="rounded-full w-40 h-40 object-cover mb-5 md:mb-0 md:mr-9 hover:scale-150 transition-transform duration-300"
+          src="profile-image-mock-url"
+        />
+        <div
+          class="space-y-6"
+        >
+          <div
+            class="space-y-2"
+          >
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900"
+            >
+              Hi, I'm John Raphy
+            </h1>
+          </div>
+          <div
+            class="space-y-4"
+          >
+            <h2
+              class="text-2xl md:text-3xl text-gray-700 font-medium"
+            >
+              I’m a software developer with a passion for building web applications
+            </h2>
+            <p
+              class="text-lg text-gray-700 leading-relaxed max-w-5xl"
+            >
+              For the past 6 years, I've been crafting backend architecturesand web applicationsthat solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-sourceprojects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.
+              <br />
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 pt-2"
+          >
+            <a
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+              href="https://www.google.com/maps?q=Braunschweig,+Germany"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📍 Based in Braunschweig, Germany
+              </span>
+            </a>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📸 Photography
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🌍 Traveling
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🎮 Gaming
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      id="skills"
+    >
+      <div
+        data-testid="skills-component"
+      >
+        Skills Component
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Home Component German Content matches snapshot for German 1`] = `
+<DocumentFragment>
+  <main
+    class="container mx-auto px-4 py-8"
+  >
+    <section
+      class="mb-12"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center"
+      >
+        <img
+          alt="John Raphy Karippery"
+          class="rounded-full w-40 h-40 object-cover mb-5 md:mb-0 md:mr-9 hover:scale-150 transition-transform duration-300"
+          src="profile-image-mock-url"
+        />
+        <div
+          class="space-y-6"
+        >
+          <div
+            class="space-y-2"
+          >
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900"
+            >
+              Hi, I'm John Raphy
+            </h1>
+          </div>
+          <div
+            class="space-y-4"
+          >
+            <h2
+              class="text-2xl md:text-3xl text-gray-700 font-medium"
+            >
+              I’m a software developer with a passion for building web applications
+            </h2>
+            <p
+              class="text-lg text-gray-700 leading-relaxed max-w-5xl"
+            >
+              For the past 6 years, I've been crafting backend architecturesand web applicationsthat solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-sourceprojects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.
+              <br />
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 pt-2"
+          >
+            <a
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+              href="https://www.google.com/maps?q=Braunschweig,+Germany"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📍 Based in Braunschweig, Germany
+              </span>
+            </a>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📸 Photography
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🌍 Traveling
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🎮 Gaming
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      id="skills"
+    >
+      <div
+        data-testid="skills-component"
+      >
+        Skills Component
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Home Component matches snapshot for English 1`] = `
+<DocumentFragment>
+  <main
+    class="container mx-auto px-4 py-8"
+  >
+    <section
+      class="mb-12"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center"
+      >
+        <img
+          alt="John Raphy Karippery"
+          class="rounded-full w-40 h-40 object-cover mb-5 md:mb-0 md:mr-9 hover:scale-150 transition-transform duration-300"
+          src="profile-image-mock-url"
+        />
+        <div
+          class="space-y-6"
+        >
+          <div
+            class="space-y-2"
+          >
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900"
+            >
+              Hi, I'm John Raphy
+            </h1>
+          </div>
+          <div
+            class="space-y-4"
+          >
+            <h2
+              class="text-2xl md:text-3xl text-gray-700 font-medium"
+            >
+              I’m a software developer with a passion for building web applications
+            </h2>
+            <p
+              class="text-lg text-gray-700 leading-relaxed max-w-5xl"
+            >
+              For the past 6 years, I've been crafting backend architecturesand web applicationsthat solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-sourceprojects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.
+              <br />
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 pt-2"
+          >
+            <a
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+              href="https://www.google.com/maps?q=Braunschweig,+Germany"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📍 Based in Braunschweig, Germany
+              </span>
+            </a>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📸 Photography
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🌍 Traveling
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🎮 Gaming
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      id="skills"
+    >
+      <div
+        data-testid="skills-component"
+      >
+        Skills Component
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`Home Component matches snapshot for German 1`] = `
+<DocumentFragment>
+  <main
+    class="container mx-auto px-4 py-8"
+  >
+    <section
+      class="mb-12"
+    >
+      <div
+        class="flex flex-col md:flex-row items-center"
+      >
+        <img
+          alt="John Raphy Karippery"
+          class="rounded-full w-40 h-40 object-cover mb-5 md:mb-0 md:mr-9 hover:scale-150 transition-transform duration-300"
+          src="profile-image-mock-url"
+        />
+        <div
+          class="space-y-6"
+        >
+          <div
+            class="space-y-2"
+          >
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-900"
+            >
+              Hi, I'm John Raphy
+            </h1>
+          </div>
+          <div
+            class="space-y-4"
+          >
+            <h2
+              class="text-2xl md:text-3xl text-gray-700 font-medium"
+            >
+              I’m a software developer with a passion for building web applications
+            </h2>
+            <p
+              class="text-lg text-gray-700 leading-relaxed max-w-5xl"
+            >
+              For the past 6 years, I've been crafting backend architecturesand web applicationsthat solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-sourceprojects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.
+              <br />
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 pt-2"
+          >
+            <a
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+              href="https://www.google.com/maps?q=Braunschweig,+Germany"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📍 Based in Braunschweig, Germany
+              </span>
+            </a>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                📸 Photography
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🌍 Traveling
+              </span>
+            </div>
+            <div
+              class="flex items-center bg-gray-100 px-4 py-2 rounded-full hover:scale-110 transition-transform duration-300"
+            >
+              <span
+                class="text-gray-700"
+              >
+                🎮 Gaming
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white"
+      id="skills"
+    >
+      <div
+        data-testid="skills-component"
+      >
+        Skills Component
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
