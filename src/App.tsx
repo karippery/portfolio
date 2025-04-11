@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,34 +12,40 @@ import AboutMe from './pages/AboutMe';
 
 function App() {
   return (
-    <Router>
-      
-      <AnimatePresence mode="wait">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
-          className="flex flex-col min-h-screen"
-        >
-      <div className="min-h-screen flex flex-col">
-      <LanguageProvider>
-      <CookieConsent />
-        <Header />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/aboutme" element={<AboutMe  />} />
-            <Route path="/privacy" element={<Privacy />} />
-          </Routes>
-        </main>
-        <Footer />
-      </LanguageProvider>
-      </div>
-      </motion.div>
-      </AnimatePresence>
-    </Router>
+    <LanguageProvider>
+      <Router>
+        <AnimatePresence mode="wait">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="flex flex-col min-h-screen"
+          >
+            <CookieConsent />
+            <Header />
+            
+            <main className="flex-grow">
+              <Routes>
+                {/* Base route redirect */}
+                <Route path="/" element={<Navigate to="/home" replace />} />
+                
+                {/* Main routes */}
+                <Route path="/home" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/about" element={<AboutMe />} />
+                <Route path="/privacy" element={<Privacy />} />
+                
+                {/* Fallback route */}
+                <Route path="*" element={<Navigate to="/home" replace />} />
+              </Routes>
+            </main>
+            
+            <Footer />
+          </motion.div>
+        </AnimatePresence>
+      </Router>
+    </LanguageProvider>
   );
 }
 
