@@ -113,6 +113,8 @@ const ContactModal = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => voi
               <p className="mt-1 text-xs text-gray-500">
                 Characters: {formData.message.length}/8
               </p>
+              <p className="mt-1 text-xs text-gray-500">
+                If you have any issues, feel free to send an email to <a href="mailto:john.karippery@yahoo.com" className="text-blue-500 underline">john.karippery@yahoo.com</a>. </p>
             </div>
 
             <div className="flex justify-end space-x-3">
