@@ -33,7 +33,7 @@ function App() {
                 {/* Main routes */}
                 <Route path="/home" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/about" element={<AboutMe />} />
+                <Route path="/aboutme" element={<AboutMe />} />
                 <Route path="/privacy" element={<Privacy />} />
                 
                 {/* Fallback route */}
