@@ -99,8 +99,8 @@ const AboutPage = () => {
   const t = translations[language];
 
     // CV download link based on language
-    const cvUrl = language === 'de' ? '/cv_de.pdf' : '/John_karippery_cv_en.pdf';
-    const cvFileName = language === 'de' ? 'Lebenslauf.pdf' : 'John_karippery_cv_de.pdf';
+    const cvUrl = language === 'de' ? 'cv_de.pdf' : '/cv_en.pdf';
+    const cvFileName = language === 'de' ? 'John_karippery_cv_de.pdf' : 'John_karippery_cv_en.pdf';
 
   const experiences = [
     {

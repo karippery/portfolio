@@ -13,7 +13,7 @@ jest.mock('../images/profile.png', () => 'profile-image-mock-url');
 describe('Home Component', () => {
   const renderHome = (language: 'en' | 'de' = 'en') => {
     return render(
-      <LanguageProvider defaultLanguage={language}>
+      <LanguageProvider>
         <Home />
       </LanguageProvider>
     );
