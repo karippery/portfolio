@@ -5,6 +5,7 @@ export type TranslationKeys = {
     // About me
     name: string;
     title: string;
+    downloadCv: string;
     navLinks: Array<{ id: string; text: string }>;
     experience: {
       title: string;
@@ -115,6 +116,7 @@ export type TranslationKeys = {
 
       name: "John Raphy Karippery",
       title: "Software Engineer /Full-Stack Developer",
+      downloadCv: "Download CV",
       navLinks: [
         { id: "experience", text: "Professional Experience" },
         { id: "education", text: "Education" },
@@ -254,6 +256,7 @@ export type TranslationKeys = {
       // About me
       name: "John Raphy Karippery",
       title: "Software Engineer /Full-Stack Entwickler",
+      downloadCv: "Lebenslauf herunterladen",
       navLinks: [
         { id: "experience", text: "Berufserfahrung" },
         { id: "education", text: "Ausbildung" },
