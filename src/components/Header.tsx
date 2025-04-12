@@ -6,8 +6,12 @@ import ContactModal from './ContactModal';
 import LanguageSwitcher from './LanguageSwitcher';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
-const Header = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+interface HeaderProps {
+  setIsModalOpen: (isOpen: boolean) => void;
+}
+
+const Header = ({ setIsModalOpen }: HeaderProps) => {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language } = useLanguage();
   const t = translations[language];
@@ -72,15 +76,15 @@ const Header = () => {
             </li>
             <li>
               <button 
-                onClick={() => setIsModalOpen(true)}
+                onClick={() => setIsContactModalOpen(true)}
                 className="btn-primary py-1 px-3 md:py-2 md:px-4 rounded-lg hover:bg-blue-700 hover:shadow-md 
                   transition-all duration-300 transform hover:-translate-y-0.5 text-sm md:text-base"
               >
                 {t.contact}
               </button>
               <ContactModal 
-                isOpen={isModalOpen} 
-                onClose={() => setIsModalOpen(false)} 
+                isOpen={isContactModalOpen} 
+                onClose={() => setIsContactModalOpen(false)} 
               />
             </li>
             <li className="ml-1 md:ml-2">
@@ -91,7 +95,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md py-4 px-6">
+          <nav className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-md py-4 px-6 z-50">
             <ul className="flex flex-col space-y-4">
               <li>
                 <Link 
@@ -121,17 +125,14 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <button 
-                  onClick={() => {
-                    setIsModalOpen(true);
-                    setIsMenuOpen(false);
-                  }}
-                  className="btn-primary w-full py-2 rounded-lg hover:bg-blue-700"
-                >
-                  {t.contact}
-                </button>
+              <button 
+                onClick={() => setIsModalOpen(true)}
+                className="btn-primary py-2 px-4 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition duration-300"
+              >
+                {t.contact}
+              </button>
               </li>
-              <li className="pt-2">
+              <li>
                 <LanguageSwitcher />
               </li>
             </ul>

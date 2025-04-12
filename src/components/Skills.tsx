@@ -71,8 +71,9 @@ const Skills = () => {
               viewport={{ once: true }}
               onMouseEnter={() => setActiveCategory(category.title)}
               onMouseLeave={() => setActiveCategory(null)}
-              className={`relative p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 overflow-hidden ${activeCategory === category.title ? 'scale-[1.02]' : ''}`}
-            >
+              className={`relative p-6 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-200 overflow-hidden z-0 ${activeCategory === category.title ? 'scale-[1.02]' : ''}`}
+              style={{ transformStyle: 'preserve-3d' }} 
+              >
               {activeCategory === category.title && (
                 <motion.div 
                   layoutId="activeBackground"

@@ -10,6 +10,7 @@ import CookieConsent from './components/CookieConsent';
 import Privacy from './pages/Privacy';
 import AboutMe from './pages/AboutMe';
 import { useEffect, useState, useCallback } from 'react';
+import ContactModal from './components/ContactModal';
 
 // Route order for swipe navigation (excluding privacy)
 const swipeRoutes = ['/home', '/aboutme', '/projects'];
@@ -30,6 +31,7 @@ function AppContent() {
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Check if device is touch-enabled
   useEffect(() => {
@@ -94,7 +96,7 @@ function AppContent() {
         onTouchEnd={onTouchEnd}
       >
         <CookieConsent />
-        <Header />
+        <Header setIsModalOpen={setIsModalOpen} />
         
         <main className="flex-grow">
           <Routes>
@@ -111,6 +113,7 @@ function AppContent() {
             <Route path="*" element={<Navigate to="/home" replace />} />
           </Routes>
         </main>
+        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         
         <Footer />
       </motion.div>
