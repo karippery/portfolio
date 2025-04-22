@@ -45,6 +45,12 @@ export type TranslationKeys = {
     contact: string;
     description: string;
     shortProfile: string;
+
+    //footer
+    facebook: string;
+    github: string;
+    instagram: string;
+    linkedin: string;
     
     // Hero Section
     welcome: string;
@@ -177,7 +183,11 @@ export type TranslationKeys = {
       description: "I’m a software developer with a passion for building web applications",
       shortProfile: "For the past 6 years, I've been crafting backend architectures and web applications that solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.", 
       
-
+      // Footer
+      facebook: "https://www.facebook.com/john.karippery/",
+      github: "https://github.com/karippery",
+      instagram: "https://Instagram.com/john.karippery",
+      linkedin: "https://www.linkedin.com/in/john-raphy-karippery-975baa5b/",
        
       // Hero Section
       welcome: "Hi, I'm John Raphy",
@@ -317,6 +327,13 @@ export type TranslationKeys = {
       contact: "Kontakt",
       description: "Ich bin ein Software Entwickler mit einer Leidenschaft für den Bau von Webanwendungen",
       shortProfile: "für die letzten 6 Jahre habe ich Backend-Architekturen und Webanwendungen entwickelt, die echte Probleme lösen. Wenn ich nicht programmiere, finden Sie mich beim Erkunden neuer Technologien oder beim Mitwirken an Open-Source-Projekten. Ich gedeihe in kollaborativen Umgebungen und liebe es, Wissen mit anderen zu teilen. Mein Ziel ist es, Software zu schaffen, die das Benutzererlebnis verbessert und Innovationen vorantreibt.",
+      
+      // Footer
+      facebook: "https://www.facebook.com/john.karippery/",
+      github: "https://github.com/karippery",
+      instagram: "https://Instagram.com/john.karippery",
+      linkedin: "https://www.linkedin.com/in/john-raphy-karippery-975baa5b/",
+
       
       // Hero Section
       welcome: "Hallo, ich bin John Raphy",
