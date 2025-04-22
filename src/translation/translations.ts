@@ -175,7 +175,7 @@ export type TranslationKeys = {
       projectMenu: "My Work",
       contact: "Say Hello",
       description: "I’m a software developer with a passion for building web applications",
-      shortProfile: "For the past 6 years, I've been crafting backend architectures and web applications that solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-sourceprojects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.", 
+      shortProfile: "For the past 6 years, I've been crafting backend architectures and web applications that solve real problems. When I'm not coding, you'll find me exploring new technologies or contributing to open-source projects. I thrive in collaborative environments and love sharing knowledge with others. My goal is to create impactful software that enhances user experiences and drives innovation.", 
       
 
        
