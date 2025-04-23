@@ -11,10 +11,25 @@ export default function useGtagPageView() {
   const location = useLocation();
 
   useEffect(() => {
-    if (window.gtag) {
-      window.gtag('event', 'page_view', {
-        page_path: location.pathname + location.search + location.hash,
-      });
-    }
+    const handleRouteChange = () => {
+      if (window.gtag) {
+        window.gtag('event', 'page_view', {
+          page_path: window.location.pathname + 
+                    window.location.search + 
+                    window.location.hash,
+          page_title: document.title
+        });
+      }
+    };
+
+    // Initial load
+    handleRouteChange();
+    
+    // Listen to hash changes (for HashRouter)
+    window.addEventListener('hashchange', handleRouteChange);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleRouteChange);
+    };
   }, [location]);
 }

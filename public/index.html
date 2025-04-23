@@ -20,8 +20,11 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-MKKRCF42V2');
+      
+      // Add this config for hash-based routing
+      gtag('config', 'G-MKKRCF42V2', {
+        page_path: window.location.pathname + window.location.search + window.location.hash
+      });
     </script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
