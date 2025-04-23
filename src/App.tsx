@@ -11,6 +11,7 @@ import Privacy from './pages/Privacy';
 import AboutMe from './pages/AboutMe';
 import { useEffect, useState, useCallback } from 'react';
 import ContactModal from './components/ContactModal';
+import useGtagPageView from './utils/useGtagPageView';
 
 // Route order for swipe navigation (excluding privacy)
 const swipeRoutes = ['/home', '/aboutme', '/projects'];
@@ -26,6 +27,7 @@ function App() {
 }
 
 function AppContent() {
+  useGtagPageView(); // Custom hook to track page views with Google Analytics
   const navigate = useNavigate();
   const location = useLocation();
   const [touchStart, setTouchStart] = useState<number | null>(null);
