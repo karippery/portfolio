@@ -94,6 +94,17 @@ export type TranslationKeys = {
     formSubject: string;
     formMessage: string;
     formSubmit: string;
+    contactError: string;
+    contactSubmitButton: string;
+    contactCancelButton: string;
+    contactSubMessage: string;
+
+    //submited contect form
+    subContacttitle: string;
+    subContactSubtitle: string;
+    subContactMessage: string;
+    subContactCloseButton: string;
+    subContactSentAgainButton: string;
     
     // Footer
     copyright: string;
@@ -241,6 +252,17 @@ export type TranslationKeys = {
       formSubject: "Subject",
       formMessage: "Your Message",
       formSubmit: "Send Message",
+      contactError: "Failed to send message. Please try again later.",
+      contactSubmitButton: "Send",
+      contactCancelButton: "Cancel",
+      contactSubMessage:" If you have any issues, feel free to send an email to",
+
+      //submited contect form
+      subContacttitle: "Contact Me",
+      subContactSubtitle:"Message Sent!",
+      subContactMessage: "Thank you for reaching out! I will get back to you as soon as possible.",
+      subContactCloseButton: "Close",
+      subContactSentAgainButton: "Send Another Message",
       
       // Footer
       copyright: "© {year} John Raphy Karippery",
@@ -386,6 +408,18 @@ export type TranslationKeys = {
       formSubject: "Betreff",
       formMessage: "Ihre Nachricht",
       formSubmit: "Nachricht senden",
+      contactError: "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es später erneut.",
+      contactSubmitButton: "Senden",
+      contactCancelButton: "Abbrechen",
+      contactSubMessage:" Wenn Sie Probleme haben, senden Sie bitte eine E-Mail an",
+
+      //submited contect form
+      subContacttitle: "Kontaktieren Sie mich",
+      subContactSubtitle:"Nachricht gesendet!",
+      subContactMessage: "Vielen Dank für Ihre Nachricht! Ich werde mich so schnell wie möglich bei Ihnen melden.",
+      subContactCloseButton: "Schließen",
+      subContactSentAgainButton: "Eine weitere Nachricht senden",
+
       
       // Footer
       copyright: "© {year} John Raphy Karippery",
