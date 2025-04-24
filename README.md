@@ -1,3 +1,27 @@
+# 🚀 Personal Portfolio - [karippery.dev](https://karippery.dev)
+
+This is my personal portfolio website built with **React**, styled using **Tailwind CSS**, and integrated with **Google Analytics 4** and **Formspree** for email submissions. It showcases my background, skills, projects, and ways to get in touch.
+
+
+## 🛠️ Tech Stack
+
+- **Frontend**: [React](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Analytics**: [Google Analytics 4 (GA4)](https://analytics.google.com/)
+- **Email Service**: [Formspree](https://formspree.io/)
+
+---
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/karippery/portfolio.git
+cd portfolio
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
