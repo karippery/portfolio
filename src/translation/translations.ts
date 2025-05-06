@@ -241,6 +241,12 @@ export type TranslationKeys = {
           description: "Implementation of a simple genetic algorithm operator code. Can be modified based on specific population requirements.",
           technologies: "Python, numpy, matplotlib",
           githubLink: "https://github.com/karippery/Genetic-Algorithm"
+        },
+        {
+          title: "Table Booking System",
+          description: "A lightweight and robust Table Booking System built with FastAPI and PostgreSQL, designed for restaurants, libraries, cafes, offices, and canteens.",
+          technologies: "Python, FastAPI, PostgreSQL, SQLAlchemy, Pydantic, Docker",
+          githubLink: "https://github.com/karippery/table_booking_system"
         }
       ],
       
@@ -397,7 +403,14 @@ export type TranslationKeys = {
           description: "Implementierung eines einfachen genetischen Algorithmus-Operatorcodes. Kann basierend auf spezifischen Populationsanforderungen modifiziert werden.",
           technologies: "Python, numpy, matplotlib",
           githubLink: "https://github.com/karippery/Genetic-Algorithm"
-        }
+        },
+        {
+          title: "Table Booking System",
+          description: "Ein leichtgewichtiges und robustes Tischbuchungssystem, das mit FastAPI und PostgreSQL entwickelt wurde, geeignet für Restaurants, Bibliotheken, Cafés, Büros und Mensen.",
+          technologies: "Python, FastAPI, PostgreSQL, SQLAlchemy, Pydantic, Docker",
+          githubLink: "https://github.com/karippery/table_booking_system"
+        },  
+
       ],
       
       // Contact Section
